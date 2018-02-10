@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Analytics -->
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5GK7GK7');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- tells mobile phones to NOT zoom out of page, and to start with scale of 1 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Skinno is an iOS app that utilizes computer vision, OCR, and AI technology to decipher skincare ingredients and aid in product selection for consumers.">
+
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon" href="resources/favicons/favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Welcome to Skinno</title>
+</head>
+
+<body id="top">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GK7GK7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header>
+        <nav>
+            <!-- to center everything inside of nav, use .row -->
+            <div id="nav" class="navBackground">
+                <div class="row">
+                    <img src="resources/img/logo_big.png" alt="Skinno logo" class="logo">
+                    <img src="resources/img/logo_big.png" alt="Skinno logo" class="logo-sticky">
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="#section-about-us">About Us</a></li>
+                        <li><a href="#section-features">Features</a></li>
+                        <li><a href="#section-app">The Journey</a></li>
+                        <li><a href="#section-profiles">Meet The Team</a></li>
+                        <li><a href="#top" id="back-to-top" class="back-to-top">Back to Top</a></li>
+                    </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon"></i></a>
+                </div>
+            </div>
+        </nav>
+
+        <img class="jumbotron-image-box-1" alt="Skincare product graphic" src="resources/img/launch-product-graphic.png">
+
+        <img class="jumbotron-image-box-2 js--animation-waypoint-phone-scan" alt="iPhone scanning graphic" src="resources/img/launch-phone-graphic.png">
+
+        <div class="welcome-box">
+            <!--            <h1>We put the power of informed skincare decisions back into your hands.</h1>-->
+            <h1>Don't guess. <span style="color: #23eaab">Know.</span></h1>
+            <a class="btn btn-full js--show-more-button" href="#">Learn more</a>
+        </div>
+        
+        <div class="form-box js--animation-waypoint-form" id="form">
+            <div class="row form-bg">
+                <h2>Stay updated</h2>
+                <form method="post" class="contact-form">
+                    <div class="label-input-pair">
+                        <div>
+                            <label for="email-1">Email:</label>
+                        </div>
+                        <input type="email" name="email-1" id="email-1" placeholder="youremail@example.com" required>
+                    </div>
+                    <input id="signup-button" type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+        <!--
+        <div class = "call-to-action-buttons">
+            <a class="btn btn-full js--hungry-button" href="#">Try It FREE</a>
+            <a class="btn btn-ghost js--show-more-button" href="#">Show me more</a>
+        </div>
+-->
+    </header>
+
+    <!-- SECTION: ABOUT US -->
+
+    <section id="section-about-us" class="section-about-us js--sticky-nav-waypoint">
+        <div class="row">
+            <h2>ABOUT US</h2>
+        </div>
+
+        <div class="row">
+            <div class="col span-1-of-2 left-box js--animation-waypoint-left-box">
+                <h2 class="box-title">Our mission</h2>
+                <p class="box-text">Have you ever looked at an ingredients label, saw that phenyl-blahblahblah, and thought "what the heck am I putting on my skin?!" Us too. <b style="color: white">We don't want you to guess. We want you to know. </b> You deserve accessible and scientifically accurate information about the skincare products that you use everyday.</p>
+            </div>
+            <div class="col span-1-of-2 right-box js--animation-waypoint-right-box">
+                <p class="box-text">Skinno is the only mobile app that scans complicated skincare ingredients labels and translates them into an easy to understand language. More than just a scanning app, it's the only platform that personalizes the process of learning about skincare.</p>
+                <h2 class="box-title">Our Method</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: FEATURES -->
+
+    <section id="section-features" class="section-features">
+        <div class="row">
+            <h2>FEATURES</h2>
+        </div>
+
+        <div class="row js--animation-waypoint-features">
+            <!-- FROM grid.css: 'col span-1-of-4'. NEVER modify classes from this .css file. add 'box' to the end to modify in own css file. -->
+            <div class="col span-1-of-4 box">
+                <!-- ionicons.com -->
+                <i class="ion-qr-scanner icon-big"></i>
+                <h3>Universal scanner</h3>
+                <p>It's as simple as taking a picture. Interact with ingredient labels in real-time. Our AI can read any label and translate the ingredients on the fly. </p>
+            </div>
+            <div class="col span-1-of-4 box">
+                <i class="ion-stats-bars icon-big"></i>
+                <h3>Dynamic Database</h3>
+                <p>Never research again! We really mean that. Access years of scientific knowledge distilled into one convenient platform. </p>
+            </div>
+            <div class="col span-1-of-4 box">
+                <i class="ion-ios-heart-outline icon-big"></i>
+                <h3>Make it yours!</h3>
+                <p>Everyone's skin is different. We strive to provide a personalized experience for your skincare journey. Create routines, filter ingredients, track your progress and more!</p>
+            </div>
+            <div class="col span-1-of-4 box feature-future">
+                <i class="ion-android-exit icon-big"></i>
+                <h3>Tap into the future</h3>
+                <p>Our developers merge the power of Artificial Intelligence with Computer Vision technology to deliver an unmatched mobile experience. Our database learns along with you!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: APP -->
+    <section id="section-app" class="section-app">
+        <div class="row">
+            <h2>Join the journey</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-2 steps-box">
+                <img class="app-screen" src="resources/img/app-iPhone2.png" alt="Skinno app on iPhone">
+            </div>
+            <div class="col span-1-of-3 steps-box beta-bg">
+                <!-- SECONDARY FORM -->
+                <div class="row">
+                    <h3 style="text-align: center">Become a beta tester</h3>
+                    <p></p>
+                    <form method="post" class="beta-form">
+
+                        <div class="label-input-pair">
+                            <div>
+                                <label for="name">Name:</label>
+                            </div>
+                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                        </div>
+
+                        <div class="label-input-pair">
+                            <div>
+                                <label for="email-beta">Email:</label>
+                            </div>
+                            <input type="email" name="email-beta" id="email-beta" placeholder="youremail@example.com" required>
+                        </div>
+
+                        <div>
+                            <input type="submit" value="Sign me up!" id="beta-send">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: PROFILES -->
+    <section id="section-profiles" class="section-profiles">
+        <div class="row">
+            <h2>Meet the team!</h2>
+        </div>
+
+        <!--            first = left portrait-->
+        <div class="row js--animation-waypoint-quotes-1 profile-left-1">
+            <div class="col span-1-of-2 portrait">
+                <h2>Lisa Guerrera</h2>
+                <img class="left-pic" src="resources/img/lisa.jpg" alt="Lisa's Photo">
+                <p class="ribbon">Chief Executive Officer (CEO)</p>
+            </div>
+            <div class="col span-1-of-2 description">
+                <p>
+                    Lisa is a skincare junkie, a caffeine addict, and a part-time redditor. She earned a Bachelor’s in Chemistry from the City College of New York and is pursuing a Master’s in Cosmetic Engineering from Manhattan College. She boasts chemical knowledge, research experience, and broad science communication skills.
+                </p>
+            </div>
+        </div>
+
+        <!--                second = right portrait-->
+        <div class="row js--animation-waypoint-quotes-2 profile-right-2">
+            <div class="col span-1-of-2 portrait">
+                <h2>David Murphy</h2>
+                <img class="right-pic" src="resources/img/david.jpg" alt="David's Photo">
+                <p class="ribbon">Chief Technology Officer (CTO)</p>
+            </div>
+            <div class="col span-1-of-2 description">
+                <p>
+                    David lives to surf, code, and teach Computer Science. He advises several robotics teams at a local high school, has published over 30 articles about app development, and tutors undergraduate programming at a local college. He is set to complete his second Bachelor's in the study of Computer Science this May '18.
+                </p>
+            </div>
+        </div>
+
+        <!--                third = left portrait-->
+        <div class="row js--animation-waypoint-quotes-3 profile-left-3">
+            <div class="col span-1-of-2 portrait">
+                <h2>Christina Torres</h2>
+                <img class="left-pic" src="resources/img/christina.jpg" alt="Christina's Photo">
+                <p class="ribbon">Chief Research Officer (CRO)</p>
+            </div>
+            <div class="col span-1-of-2 description">
+                <p>
+                    Christina has been to over 100 concerts, collects bugs, and is an active scientific communicator. She is pursuing a Master’s in Biology at the City College of New York, where she maintains large scale databases. She sorts through the primary scientific literature and creates the unique ingredients database.
+                </p>
+            </div>
+        </div>
+
+        <!--                fourth = right portrait-->
+        <div class="row js--animation-waypoint-quotes-4 profile-right-4">
+            <div class="col span-1-of-2 portrait">
+                <h2>Bryce Halley</h2>
+                <img src="resources/img/bryce.jpg" alt="Bryce's Photo">
+                <p class="ribbon">Chief Operating Officer (COO)</p>
+            </div>
+            <div class="col span-1-of-2 description">
+                <p>
+                    Bryce founded flavitt, one of the first meal-delivery technology companies. He was the first employee and a senior executive at Ripcord, a records-as-a-service company. Most recently he developed public/private partnerships and initiatives at the NYCEDC.
+                </p>
+            </div>
+        </div>
+
+        <!--                fifth = left portrait-->
+        <div class="row js--animation-waypoint-quotes-5 profile-left-5">
+            <div class="col span-1-of-2 portrait portrait">
+                <h2>Sumali Dey</h2>
+                <img src="resources/img/sumi.jpg" alt="Sumi's Photo">
+                <p class="ribbon">Graphic Designer</p>
+            </div>
+            <div class="col span-1-of-2 description">
+                <p>
+                    Sumali is a design geek, visual artist, and skincare enthusiast. She is a self-taught graphics designer and studies Sociology and Pre-Law at The City College of New York. She has a keen eye for beauty and fashion trends. She composes the key graphics and design elements for Skinno's interface. 
+                
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECONDARY FORM -->
+    <div class="form-box-2" id="form2">
+        <div class="row form-bg-2">
+            <h2>Learn more!</h2>
+            <div class="row">
+
+                <form method="post" class="contact-form-2">
+
+                    <div class="label-input-pair">
+                        <div class="col span-1-of-3 form-2-email-label">
+                            <label for="email-2">Email:</label>
+                        </div>
+                        <div class="col span-1-of-2 form-2-email">
+                            <input type="email" id="email-2" name="email-2" placeholder="youremail@example.com" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <input type="submit" value="Send" id="form-2-send">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION: FOOTER -->
+    <footer>
+        <div class="row">
+            <ul class="social-icons">
+                <li><a target="_blank" href="https://www.facebook.com/Skinno-597634437234700/"><i class="ion-social-facebook"></i></a></li>
+                <li><a target="_blank" href="https://www.twitter.com/skinnoapp"><i class="ion-social-twitter"></i></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/skinnoapp"><i class="ion-social-instagram"></i></a></li>
+                <li><a target="_blank" href="www.skinnoapp.tumblr.com"><i class="ion-social-tumblr"></i></a></li>
+                <li><a target="_blank" href="http://www.pinterest.com/skinnoapp"><i class="ion-social-pinterest"></i></a></li>
+                <li><a target="_blank" href="https://www.youtube.com/channel/UCQIIpTn_iLhBLzrDOWC5fgw"><i class="ion-social-youtube"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <!-- Our script MUST be the last script we call -->
+    <script src="resources/js/scripts.js"></script>
+</body>
+
+</html>

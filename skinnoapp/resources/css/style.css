@@ -1,0 +1,1103 @@
+/*  Signature Mint/Seafoam color: #abfae1 | DARKER 2bf2b3 | LIGHTER dbfdf2 
+    Gray: #bcbcbc
+*/
+
+/* ------------------------------------------- */
+
+/* ------- BASIC SETUP ------- */
+
+/* ------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: rgb(109, 109, 109);
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    /* For small resolution: removes horizontal bar on bottom  */
+    overflow-x: hidden;
+}
+
+
+/* ------------------------------------------- */
+
+/* ------- REUSABLE COMPONENTS ------- */
+
+/* ------------------------------------------- */
+
+/* To indent content from sides and orient center */
+
+.row {
+    /* the only value for positioning (aside from margin/padding) that uses pixles for the website */
+    max-width: 1140px;
+    /*margin: 0 auto 0 auto;*/
+    margin: 0 auto;
+}
+
+/* produce whitespace */
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+/* clear floats: important after using float properties to clear floats. Call this in the parent of an element with float property.
+    - html doesn't record pixels for elements with float property
+    - restore pixel calculation to correct padding issues concerning elements that proceed elements with float properties
+*/
+
+.clearfix {
+    zoom: 1
+}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ------------------------------------------- */
+
+/* ------- Headings ------- */
+
+/* ------------------------------------------- */
+
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    /* correct unwanted margin space above header from normalize.css */
+    margin-top: 0;
+    margin-bottom: 20px;
+    /* relative to font size set in html parent css rule */
+    font-size: 300%;
+    word-spacing: 4px;
+    font-weight: 300;
+    color: rgb(152, 152, 152);
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #2bf2b3;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+
+/* ------------------------------------------- */
+
+/* ------- PARAGRAPHS ------- */
+
+/* ------------------------------------------- */
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    /* To center: cut remaining pixels in half: 30% / 2 = 15% */
+    margin-left: 15%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+
+/* ------------------------------------------- */
+
+/* ------- ICONS ------- */
+
+/* ------------------------------------------- */
+
+.icon-big {
+    font-size: 250%;
+    /* Block in order to force a line-break */
+    display: block;
+    color: #2bf2b3;
+    margin-bottom: 10px;
+    margin-left: 50%;
+    -webkit-transform: translate(-30%, 0);
+    transform: translate(-20%, 0);
+}
+
+.icon-small {
+    /* To give each icon space afterwards and access to width class */
+    display: inline-block;
+    color: #2bf2b3;
+    width: 30px;
+    font-size: 120%;
+    margin-right: 10px;
+    margin-top: -5px;
+}
+
+/* ------------------------------------------- */
+
+/* ------- LINKS ------- */
+
+/* ------------------------------------------- */
+
+a:link,
+a:visited {
+    color: #2bf2b3;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #2bf2b3;
+    -webkit-transition: border-bottom 200ms, color 200ms;
+    transition: border-bottom 200ms, color 200ms;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
+/* ------------------------------------------- */
+
+/* ------- BUTTONS ------- */
+
+/* ------------------------------------------- */
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    z-index: 100;
+    /* change in-line property of <a> for this element to inline-block to have them appear side-by-siode, and to give them padding and margin capabilities*/
+    display: inline-block;
+    padding: 10px 33px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+    -webkit-transition: background-color 200ms, border 200ms, color 200ms;
+    transition: background-color 200ms, border 200ms, color 200ms;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #23eaab;
+    border: 1px solid #23eaab;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #23eaab; /////////////////////////////////////
+    color: #23eaab;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #0bad79;
+    border: 1px solid #0bad79;
+    color: #fff;
+}
+
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=username] {
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+input::-webkit-input-placeholder {
+    color: #afafaf;
+}
+
+input:-ms-input-placeholder {
+    color: #afafaf;
+}
+
+input::placeholder {
+    color: rgba(119, 119, 119, 0.36);
+    font-weight: default;
+}
+
+input:placeholder-shown {
+    font-weight: default;
+}
+
+input[type=submit] {
+    font-size: 15px;
+}
+
+/* ------------------------------------------- */
+
+/* ------- HEADER ------- */
+
+/* ------------------------------------------- */
+
+header {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.78)), to(rgba(43, 242, 179, .5)));
+    background: linear-gradient(rgba(255, 255, 255, 0.78), rgba(43, 242, 179, .5));
+    /*    url(img/jumbo1.jpg)*/
+    /*    rgba(188, 188, 188, 0.5)*/
+    /*    background-image: linear-gradient(rgba(43, 242, 179, 0.3), rgba(0,0,0,0.2)), url(img/jumbo1.jpg);*/
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    /* image stays in the same place */
+    background-attachment: fixed;
+}
+
+header img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto\9;
+    /* ie8 */
+}
+
+header br {}
+
+.jumbotron-image-box-1 {
+    /* Won't use flow grid, b/c we want this text to be absolutely positioned */
+    position: absolute;
+    top: 44%;
+    left: 18%;
+    /* half of width and height up and to left */
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /*    image-orientation: center;*/
+}
+
+.jumbotron-image-box-2 {
+    /* Won't use flow grid, b/c we want this text to be absolutely positioned */
+    position: absolute;
+    top: 37.5%;
+    left: 23%;
+    /* half of width and height up and to left */
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /*    image-orientation: center;*/
+}
+
+.welcome-box {
+    position: absolute;
+    top: 50%;
+    left: 73%;
+    width: 50%;
+
+    /* half of width and height up and to left */
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.form-box {
+    /* Won't use flow grid, b/c we want this text to be absolutely positioned */
+    padding: 35px 35px 35px 35px;
+    position: absolute;
+    width: 20%;
+    height: 40%;
+    top: 74%;
+    left: 80%;
+
+    border: 1px solid #23eaab;
+
+    /* half of width and height up and to left */
+    background-color: rgba(255, 255, 255, 0.64);
+}
+
+.form-box label {
+    font-size: 80%;
+}
+
+.form-box h2 {
+    font-size: 130%;
+    margin-bottom: 15px;
+}
+
+.form-box h2:after {
+    margin-top: 15px;
+}
+
+#signup-button {
+    margin-left: 0;
+    margin-top: 10px;
+}
+
+.contact-form input[type=submit] {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.contact-form .label-input-pair {
+    margin-bottom: 5px;
+}
+
+.contact-form .label-input-pair input {
+    width: 100%;
+}
+
+.call-to-action-buttons {
+    position: absolute;
+    top: 90%;
+    left: 25%;
+    /* half of width and height up and to left */
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+
+    margin-left: -47px;
+    margin-right: 50px;
+}
+
+/* Main navigation */
+
+.main-nav {
+    float: center;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    /* Padding: Top-Bottom, Left-Right */
+    padding: 8px 0;
+    color: #939393;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: none;
+    -webkit-transition: 200ms;
+    transition: 200ms;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #2bf2b3;
+    padding-bottom: 13px;
+}
+
+.back-to-top {
+    display: none;
+}
+
+/* Mobile navigation */
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    /* Pointer now reacts to link like it's a button */
+    cursor: pointer;
+    display: none;
+    color: rgba(109, 109, 109, 0.55);
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+}
+
+/* Sticky navigation */
+
+.sticky {
+    /* irrespective of scrolling */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    -webkit-box-shadow: 0 2px 2px #f0f0f0;
+    box-shadow: 0 2px 2px #f0f0f0;
+    z-index: 9999;
+    -webkit-transition: 250ms;
+    transition: 250ms;
+}
+
+.sticky .main-nav {
+    margin-top: 23px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    border-bottom: none;
+    padding: 5px 0;
+    -webkit-transition: 200ms;
+    transition: 200ms;
+}
+
+#nav .active {
+    border-bottom: 2px solid #2bf2b3;
+}
+
+.sticky .main-nav li a:hover,
+.sticky .main-nav li a:active {
+    border-bottom: 2px solid #2bf2b3;
+}
+
+.sticky .logo {
+    display: none;
+}
+
+.sticky .logo-sticky {
+    display: block;
+}
+
+.sticky .mobile-nav-icon {
+    color: rgba(109, 109, 109, 0.55);
+}
+
+.logo-sticky {
+    display: none;
+    height: 50px;
+    float: left;
+    margin: 13px 0;
+    margin-right: 50px;
+    margin-left: -17px;
+}
+
+.sticky .back-to-top {
+    display: inline-block;
+}
+
+/*
+**FOR PHP** 
+.form-message {
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center; 
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.success { background-color: rgba(36, 235, 0, 0.6); }
+
+.error { background-color: rgba(255, 0, 0, 0.6); }
+**FOR PHP**
+*/
+
+/* ------------------------------------------- */
+
+/* ------- ABOUT US ------- */
+
+/* ------------------------------------------- */
+
+.section-about-us {
+    background-color: #fff;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, .9)), to(rgba(255, 255, 255, .5)));
+
+    background-image: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .5));
+    background-position: ;
+    background-size: cover;
+}
+
+.left-box {
+    width: 53%;
+    height: 450px;
+    float: left;
+    background-color: rgba(43, 242, 179, 0.76);
+    -webkit-box-shadow: 7px 7px 5px rgba(160, 160, 160, 0.27);
+    box-shadow: 7px 7px 5px rgba(160, 160, 160, 0.27);
+    position: relative;
+    z-index: 10;
+}
+
+.left-box .box-text {
+    text-align: center;
+    padding-left: 55px;
+    padding-right: 85px;
+    line-height: 1.5;
+    font-size: 130%;
+    color: rgba(35, 96, 77, 0.96);
+}
+
+.left-box .box-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 160%;
+    color: #6c6c6c;
+}
+
+.left-box h2:after {
+    margin-top: 15px;
+    background-color: rgb(255, 255, 255);
+}
+
+.right-box {
+    margin-top: -320px;
+    width: 53%;
+    height: 440px;
+    float: right;
+    background-color: rgba(247, 247, 247, 0.87);
+    -webkit-box-shadow: 10px 10px 5px rgba(160, 160, 160, 0.27);
+    box-shadow: 7px 7px 5px rgba(160, 160, 160, 0.27);
+    position: relative;
+    z-index: 0;
+}
+
+.right-box .box-text {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-left: 85px;
+    padding-right: 55px;
+    padding-top: 35px;
+    line-height: 1.5;
+    font-size: 130%;
+}
+
+.right-box .box-title {
+    font-size: 160%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    color: rgb(109, 109, 109);
+    text-align: center;
+
+}
+
+.right-box h2:before {
+    display: block;
+    height: 2px;
+    background-color: #2bf2b3;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.right-box h2:after {
+    display: none;
+}
+
+.mission-statement {
+    color: white;
+    font-size: 100%;
+}
+
+/* ------------------------------------------- */
+
+/* ------- FEATURES ------- */
+
+/* ------------------------------------------- */
+
+.section-features {
+    background-color: #f4f4f4;
+
+}
+
+.section-features .long-copy {
+    margin-bottom: 40px;
+}
+
+.section-features h3 {
+    font-size: 91%;
+    text-align: center;
+}
+
+/*
+
+.feature-future h3 {
+    font-size: 90%;
+}
+*/
+
+/* ------------------------------------------- */
+
+/* ------- APP ------- */
+
+/* ------------------------------------------- */
+
+/* suble shade difference to new section */
+
+.section-app {
+    background-color: #FFF;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, .5)), to(rgba(255, 255, 255, .5)));
+    background-image: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5));
+    background-position: center;
+}
+
+.section-app h2::after {
+    margin-bottom: 45px;
+}
+
+.section-app h3 {
+    font-size: 130%;
+}
+
+/* Selects first of the 'steps-box'es, which is the picture */
+
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.steps-box:last-child {
+    margin-top: 7%;
+}
+
+.app-screen {
+    width: 40%;
+}
+
+.works-step {
+    margin-bottom: 50px;
+}
+
+.beta-bg {
+    padding: 40px;
+    /*
+    background-color: rgba(247, 247, 247, 0.87);
+    box-shadow: 7px 7px 5px rgba(160, 160, 160, 0.27);
+*/
+}
+
+/* Same as :last-child */
+
+.beta-form .label-input-pair {
+    margin-bottom: 10px;
+}
+
+.beta-form .label-input-pair input {
+    width: 100%;
+    font-size: 70%;
+
+}
+
+#beta-send {
+    width: 100%;
+    margin-top: 7px;
+}
+
+
+/* ------------------------------------------- */
+
+/* ------- MEET THE TEAM ------- */
+
+/* ------------------------------------------- */
+
+.section-profiles {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(43, 242, 179, .8)), to(rgba(188, 188, 188, 0.7))), url(img/jumbo1-min.jpg);
+    background-image: linear-gradient(rgba(43, 242, 179, .8), rgba(188, 188, 188, 0.7)), url(img/jumbo1-min.jpg);
+    background-size: cover;
+    /* image stays in same place */
+    background-attachment: fixed;
+    position: relative;
+    height: 2100px;
+    color: #fff;
+}
+
+.section-profiles .row {
+    width: 28%;
+    height: 570px;
+}
+
+.profile-left-1 {
+    background-color: rgba(247, 247, 247, 0.87);
+    padding: 20px 20px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 10.5%;
+    left: 20.5%;
+    -webkit-box-shadow: 7px 7px 5px rgba(160, 160, 160, 0.27);
+    box-shadow: 7px 7px 5px rgba(160, 160, 160, 0.27);
+    color: rgb(109, 109, 109);
+}
+
+.profile-left-3 {
+    background-color: rgba(247, 247, 247, 0.87);
+    padding: 20px 20px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 39.3%;
+    left: 20.5%;
+    -webkit-box-shadow: 7px 7px 5px rgba(160, 160, 160, 0.27);
+    box-shadow: 7px 7px 5px rgba(160, 160, 160, 0.27);
+    color: rgb(109, 109, 109);
+}
+
+.profile-left-5 {
+    background-color: rgba(247, 247, 247, 0.87);
+    padding: 20px 20px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 68.1%;
+    left: 20.5%;
+    -webkit-box-shadow: 7px 7px 5px rgba(160, 160, 160, 0.27);
+    box-shadow: 7px 7px 5px rgba(160, 160, 160, 0.27);
+    color: rgb(109, 109, 109);
+}
+
+/* 25.8 */
+
+.profile-right-2 {
+    background-color: rgba(247, 247, 247, 0.87);
+    padding: 20px 20px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 19%;
+    left: 51%;
+    -webkit-box-shadow: 7px 7px 5px rgba(160, 160, 160, 0.27);
+    box-shadow: 7px 7px 5px rgba(160, 160, 160, 0.27);
+    color: rgb(109, 109, 109);
+}
+
+.profile-right-4 {
+    background-color: rgba(247, 247, 247, 0.87);
+    padding: 20px 20px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 47.8%;
+    left: 51%;
+    -webkit-box-shadow: 7px 7px 5px rgba(160, 160, 160, 0.27);
+    box-shadow: 7px 7px 5px rgba(160, 160, 160, 0.27);
+    color: rgb(109, 109, 109);
+}
+
+.portrait {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.portrait img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border-color: #2bf2b3;
+    float: center;
+    margin-bottom: -60px;
+}
+
+.portrait h2 {
+    font-size: 130%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.portrait h2:after {
+    margin-top: 20px;
+    width: 70%;
+}
+
+.description {
+    width: 100%;
+    margin: 0 0;
+}
+
+.description p {
+    text-align: center;
+    line-height: 130%;
+
+}
+
+.ribbon {
+    font-weight: 500;
+    font-size: 70% !important;
+    /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+    width: 50%;
+
+    position: relative;
+    background: rgba(43, 237, 176, 1);
+    color: #fff;
+    text-align: center;
+
+    padding: .7em 2em;
+    /* Adjust to suit */
+    margin: 2em auto 3em;
+    /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+    border-radius: 10px;
+}
+
+.ribbon:before,
+.ribbon:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -.7em;
+    border: 1.5em solid #0db982;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.ribbon:before {
+    left: -2em;
+    border-right-width: 1.5em;
+    border-left-color: transparent;
+}
+
+.ribbon:after {
+    right: -2em;
+    border-left-width: 1.5em;
+    border-right-color: transparent;
+}
+
+.ribbon .ribbon-content:before,
+.ribbon .ribbon-content:after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #0bad79 transparent transparent transparent;
+    bottom: -1em;
+}
+
+.ribbon .ribbon-content:before {
+    left: 0;
+    border-width: 1em 0 0 1em;
+}
+
+.ribbon .ribbon-content:after {
+    right: 0;
+    border-width: 1em 1em 0 0;
+}
+
+/* ------------------------------------------- */
+
+/* ------- FORM #2 ------- */
+
+/* ------------------------------------------- */
+
+.form-box-2 {
+    width: 100%;
+    /* Higher index = first we see */
+    z-index: 10;
+    margin: auto;
+    font-size: 120%;
+}
+
+.form-bg-2 {
+    width: 35%;
+    /*
+    border: 1px solid;
+    border-color: rgba(109, 109, 109, 0.12);
+    color: rgb(109, 109, 109);
+    background-color: rgba(247, 247, 247, 0.87);
+    padding: 30px 40px;
+    -webkit-box-shadow: 7px 0px 5px rgba(160, 160, 160, 0.27);
+    box-shadow: 7px 0px 5px rgba(160, 160, 160, 0.27);
+    */
+}
+
+.form-box-2 h2 {
+    margin-top: 20px;
+    font-size: 150%;
+    margin-bottom: 5px;
+    overflow: visible;
+}
+
+.form-box-2 h2:after {
+    margin-top: 10px;
+    width: 30%;
+}
+
+.form-box-2 .label-input-pair {
+    font-size: 90%;
+    margin-top: 10px;
+}
+
+.form-2-email-label {
+
+    padding-top: 3.5px;
+    text-align: center;
+}
+
+.form-box-2 input[type=email] {
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 75%;
+    width: 100%;
+}
+
+.form-box-2 input[type=submit] {
+    margin: 10px 35% 20px 35%;
+    font-size: 60%;
+    width: 30%;
+}
+
+/* ------------------------------------------- */
+
+/* ------- FOOTER ------- */
+
+/* ------------------------------------------- */
+
+footer {
+    background-color: #272727;
+    padding: 45px;
+    font-size: 90%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-icons {
+    list-style: none;
+    float: right;
+    margin-top: -5px;
+}
+
+.footer-nav li,
+.social-icons li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-icons li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-icons li a:link,
+.social-icons li a:visited {
+    color: #696969;
+    text-decoration: none;
+    border: 0;
+    -webkit-transition: 200ms;
+    transition: 200ms;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active,
+.social-icons li a:hover,
+.social-icons li a:active {
+    color: #fff;
+}
+
+.social-icons li a:link,
+.social-icons li a:visited {
+    font-size: 145%;
+}
+
+.ion-social-facebook {
+    color: #3b5998;
+    -webkit-transition: 400ms;
+    transition: 400ms;
+}
+
+.ion-social-twitter {
+    color: #00aced;
+    -webkit-transition: 400ms;
+    transition: 400ms;
+}
+
+.ion-social-instagram {
+    color: #517fa4;
+    -webkit-transition: 400ms;
+    transition: 400ms;
+}
+
+.ion-social-pinterest {
+    color: #bd081c;
+    -webkit-transition: 400ms;
+    transition: 400ms;
+}
+
+.ion-social-tumblr {
+    color: #34465d;
+    -webkit-transition: 400ms;
+    transition: 400ms;
+}
+
+.ion-social-youtube {
+    color: #cd201f;
+    -webkit-transition: 400ms;
+    transition: 400ms;
+}
+
+.social-icons li i:hover,
+.social-icons li i:active {
+    color: #fff;
+}
+
+/* ------------------------------------------- */
+
+/* ------- SCROLL ANIMATIONS ------- */
+
+/* ------------------------------------------- */
+
+.js--animation-waypoint-phone-scan,
+.js--animation-waypoint-features,
+.js--animation-waypoint-left-box,
+.js--animation-waypoint-right-box,
+.js--animation-waypoint-phone,
+.js--animation-waypoint-quotes-1,
+.js--animation-waypoint-quotes-2,
+.js--animation-waypoint-quotes-3,
+.js--animation-waypoint-quotes-4,
+.js--animation-waypoint-quotes-5,
+.js--animation-waypoint-quotes-6,
+.js--animation-waypoint-plan-1,
+.js--animation-waypoint-plan-2,
+.js--animation-waypoint-form,
+.js--animation-waypoint-form2 {
+    opacity: 0;
+}
+
+.js--animation-waypoint-phone-scan.animated,
+.js--animation-waypoint-features.animated,
+.js--animation-waypoint-left-box.animated,
+.js--animation-waypoint-right-box.animated,
+.js--animation-waypoint-quotes.animated,
+.js--animation-waypoint-phone.animated,
+.js--animation-waypoint-quotes-1.animated,
+.js--animation-waypoint-quotes-2.animated,
+.js--animation-waypoint-quotes-3.animated,
+.js--animation-waypoint-quotes-4.animated,
+.js--animation-waypoint-quotes-5.animated,
+.js--animation-waypoint-quotes-6.animated,
+.js--animation-waypoint-plan-1.animated,
+.js--animation-waypoint-plan-2.animated,
+.js--animation-waypoint-form.animated,
+.js--animation-waypoint-form2.animated {
+    opacity: 1;
+}

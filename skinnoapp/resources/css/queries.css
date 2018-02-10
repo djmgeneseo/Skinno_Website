@@ -1,0 +1,753 @@
+/* ------------------------------------------------------------------ */
+
+/* Monitor to 1800px (widths smaller than 1600px row) */
+
+/* ------------------------------------------------------------------ */
+
+@media only screen and (max-width: 1800px) {
+    .welcome-box {
+        left: 74%;
+    }
+}
+
+/* ------------------------------------------------------------------ */
+
+/* Monitor to 1600px (widths smaller than 1600px row) */
+
+/* ------------------------------------------------------------------ */
+
+@media only screen and (max-width: 1600px) {
+    .welcome-box {
+        left: 79%;
+    }
+    
+    .contact-form label {
+        font-size: 80%;
+    }
+
+    .contact-form input {
+        font-size: 70%;
+
+    }
+}
+
+/* ------------------------------------------------------------------ */
+
+/* Monitor tablet to 1400px (widths smaller than 1400px row) */
+
+/* ------------------------------------------------------------------ */
+
+@media only screen and (max-width: 1400px) {
+
+    /*    .form-box h2 { font-size: 140%;}*/
+    .jumbotron-image-box-2 {
+        top: 30%;
+    }
+    
+    .form-box {
+        width: 25%;
+        left: 75%;
+    }
+    
+    .form-box h2 {
+        font-size: 100%;
+    }
+
+    .welcome-box {
+        font-size: 70%;
+    }
+
+    .section-profiles .row {
+        width: 38%;
+    }
+
+    .section-profiles h2 {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 30px;
+    }
+
+    .profile-left-1 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        left: 9.5%;
+        
+    }
+
+    .profile-left-3 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        left: 9.5%;
+        
+    }
+
+    .profile-left-5 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        left: 9.5%;
+        
+    }
+    /* 25.8 */
+    .profile-right-2 {
+        padding: 10px 10px;
+    }
+
+    .profile-right-4 {
+        padding: 10px 10px;
+    }
+
+    .profile-right-6 {
+        padding: 10px 10px;
+    }
+
+    .description {
+        font-size: 90%
+    }
+    
+    .form-bg-2 {
+    width: 50%;
+}
+}
+
+/* ------------------------------------------------------------------ */
+
+/* Big tablet to 1200px (widths smaller than 1140px row) */
+
+/* ------------------------------------------------------------------ */
+
+@media only screen and (max-width: 1200px) {
+
+    .welcome-box {
+        left: 79%;
+        font-size: 80%;
+        width: 50%;
+    }
+
+    .contact-form {
+        font-size: 90%;
+
+    }
+
+    .jumbotron-image-box-1 {
+        width: 21%;
+        top: 50%;
+        left: 19%;
+    }
+
+    .jumbotron-image-box-2 {
+        left: 26%;
+        width: 30%;
+        top: 45%
+    }
+
+    .jumbotron-text-box {
+        width: 100%;
+        /* top/bottom, left/right */
+        padding: 0 2%;
+    }
+
+    .row {
+        padding: 0 2%;
+    }
+
+    .left-box .box-text {
+        font-size: 95%;
+    }
+
+    .right-box .box-text {
+        font-size: 95%;
+    }
+
+}
+
+/* ------------------------------------------------------------------ */
+
+/* Small tablets to big tablets: 823-1023px */
+
+/* ------------------------------------------------------------------ */
+
+@media only screen and (max-width: 1023px) {
+    body {
+        font-size: 18px;
+    }
+    section {
+        padding: 60px 0;
+    }
+
+    .form-box {
+        width: 35%;
+        left: 65%;
+    }
+
+    #name {
+        width: 100%;
+    }
+
+    #email {
+        width: 100%;
+    }
+    
+    .sticky .main-nav {
+        float: none;
+        margin-left: 100px;
+        font-size: 80%;
+        font-weight: 400;
+    }
+
+    .main-nav li {
+        font-size: 83.3%;
+    }
+
+    .sticky .main-nav li {
+        font-size: 96%;
+    }
+
+    .left-box {
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .right-box {
+        height: auto;
+    }
+    
+    .app-screen {
+        width: 50%;
+    }
+
+    .icon-small {
+        width: 17px;
+        margin-right: 10px;
+    }
+}
+
+
+/* ------------------------------------------------------------------ */
+
+/* 767-823px */
+
+/* ------------------------------------------------------------------ */
+
+@media only screen and (max-width: 823px) {
+    .btn-app img {
+        width: 150px;
+    }
+
+    .main-nav li {
+        margin-left: -10px;
+    }
+
+    .section-profiles {
+        height: auto;
+    }
+
+    .section-profiles .row {
+        position: static;
+        width: 80%;
+        height: 20%;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+    }
+
+}
+
+/* ------------------------------------------------------------------ */
+
+/* Small phones to small tablets: 500-767px */
+
+/* ------------------------------------------------------------------ */
+
+@media only screen and (max-height: 767px) {
+    .jumbotron-image-box-1 {
+        width: 21%;
+        top: 55%;
+        left: 19%;
+    }
+
+    .jumbotron-image-box-2 {
+        left: 26%;
+        width: 28%;
+    }
+
+    .welcome-box {
+        top: 50%;
+        left: 78%;
+        width: 50%;
+    }
+
+    .form-box {
+        top: 70%;
+
+    }
+
+    .form-box h2 {
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        font-size: 100%;
+    }
+
+    .form-box h2:after {
+        margin-top: 5px;
+    }
+
+    .contact-form {
+        font-size: 90%;
+    }
+
+    .contact-form input {
+        font-size: 70%;
+    }
+
+}
+
+/****************************************************************************
+    TABLETS < 767px in width
+*/
+
+@media only screen and (max-width: 767px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    /* Even less vertical whitespace */
+    section {
+        padding: 30px 0;
+    }
+
+    h1 {
+        font-size: 180%;
+    }
+    
+    h2 {
+        margin-top: 20px;
+        font-size: 150%;
+    }
+
+    .row,
+    .hero-text-box {
+        padding: 0 4%;
+    }
+
+    /* Columns are now stacked */
+    .col {
+        width: 100%;
+        /* From grid.css: */
+        /* margin: 1% 0 1% 1.6%;*/
+        margin: 0 0 4% 0;
+    }
+
+    /* Header */
+    .welcome-box {
+        top: 50%;
+        left: 81%;
+    }
+
+    .welcome-box h1 {
+        font-size: 250%;
+    }
+
+    .jumbotron-image-box-1 {
+        width: 30%;
+        top: 52%;
+        left: 19%;
+    }
+
+    .jumbotron-image-box-2 {
+        top: 50%;
+        left: 26%;
+        width: 35%;
+    }
+
+    .form-box h2 {
+        margin-top: 0;
+    }
+    
+    .contact-form {
+        font-size: 120%;
+    }
+    
+    
+    /* Mobile navigation */
+    .main-nav {
+        display: none;
+    }
+    /* jQuery changes this to inline-block when button hit */
+    .mobile-nav-icon {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .main-nav {
+        float: left;
+        margin-top: 25px;
+        margin-left: 35px;
+    }
+
+    .main-nav li {
+        display: block;
+        font-size: 80%;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: none;
+        padding: 8px 0;
+        font-size: 100%;
+        -webkit-transition: 175ms;
+        transition: 175ms;
+    }
+
+    /* When in mobile and nav is normal, "back to top" option does NOT display */
+    .main-nav li:last-child {
+        display: none;
+    }
+
+    .main-nav li a:hover,
+    .main-nav li a:active {
+        border-bottom: 2px solid #23eaab;
+        border-bottom-width: 30%;
+        padding-bottom: 7px;
+        margin-bottom: 15px;
+    }
+
+    /* Mobile sticky nav */
+    .sticky .main-nav {
+        display: none;
+    }
+    /* jQuery changes this to inline-block when button hit */
+    .sticky .main-nav {
+        margin-bottom: 18px;
+        margin-left: 50px;
+        float: left;
+        font-size: 100%;
+    }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        display: inline-block;
+        padding: 8px 0;
+        -webkit-transition: 175ms;
+        transition: 175ms;
+    }
+
+    /* When in mobile and nav is sticky, "back to top" option displays */
+    .sticky .main-nav li:last-child {
+        display: inline-block;
+    }
+
+    .sticky .main-nav li a:hover,
+    .sticky .main-nav li a:active {
+        padding-bottom: 9px;
+    }
+
+    .sticky .mobile-nav-icon {
+        margin-top: 18px;
+    }
+
+    /* HEAD BODY  */
+    #signup-button {
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    /* ABOUT US */
+    .left-box .box-text {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .right-box .box-text {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    /* features */
+    .long-copy {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .section-features i {
+        width: 100%;
+    }
+    .section-features .icon-big {
+        font-size: 190%;
+        display: inline;
+        margin-left: 46%;
+    }
+
+    .section-features p {
+        margin-bottom: 5px;
+    }
+
+    .section-features p,
+    .section-features h3,
+    .long-copy {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .section-features h3,
+    .section-features .long-copy {
+        line-height: 30px;
+    }
+    .section-features h2 {
+        line-height: 40px;
+    }
+    .section-features h2:after {
+        margin-top: 20px;
+    }
+
+    .section-features p {
+        line-height: 23px;
+    }
+
+    /* how it works */
+    .app-screen {
+        width: 40%;
+    }
+
+    .steps-box:first-child {
+        text-align: center;
+        padding-right: 3%;
+        margin-top: 30px;
+    }
+
+    .works-step div {
+        /* No line break, # can be side-by-side with the text */
+        height: 40px;
+        width: 40px;
+        padding: 5px;
+        margin-right: 15px;
+        font-size: 120%;
+    }
+
+    .works-step {
+        margin-bottom: 20px;
+        width: 90%;
+        float: left;
+    }
+
+    .works-step:last-of-type {
+        margin-bottom: 30px;
+    }
+
+    .form-bg-2 {
+        width: 100%;
+    }
+    
+    .form-box-2 input[type=submit] {
+        margin: 10px 30% 20px 30%;
+        width: 40%;
+}
+
+    .footer-nav {
+        float: none;
+        text-align: center;
+    }
+
+    .social-icons {
+        float: none;
+        display: block;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .footer-2 {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    
+    .form-box {
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-height: 525px) {
+    .form-box {
+        top: 40%;
+    }
+
+    .form-box h2 {
+        font-size: 110%;
+        letter-spacing: 1px;
+    }
+
+    .jumbotron-image-box-1 {
+        width: 17%;
+        top: 55%;
+        left: 17%;
+    }
+
+    .jumbotron-image-box-2 {
+        width: 28%;
+        top: 39%;
+        left: 23%;
+    }
+}
+
+/* ------------------------------------------------------------------ */
+
+/* PHONES -  < 500px in width
+/* ------------------------------------------------------------------ */
+
+@media only screen and (max-width: 500px) {
+
+    section {
+        padding: 25px 0;
+    }
+
+    .btn:link,
+    .btn:visited,
+    input[type=submit] {
+        font-size: 80%;
+    }
+
+    .main-nav {
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+
+    .jumbotron-image-box-1 {
+        width: 23%;
+        top: 32%;
+        left: 13%;
+    }
+
+    .jumbotron-image-box-2 {
+        top: 25%;
+        left: 16%;
+        width: 45%;
+    }
+
+    .welcome-box {
+        top: 40%;
+        left: 79%;
+        width: 45%
+    }
+    
+    .welcome-box .btn-full {
+        font-size: 110%;
+    }
+
+    .welcome-box h1 {
+        font-size: 235%;
+    }
+
+    .welcome-box a {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .form-box {
+        width: 100%;
+        left: 0;
+        top: 75%;
+        height: 30%;
+    }
+
+    .form-box h2 {
+        margin-top: 10px;
+        font-size: 130%;
+        margin-bottom: 2px;
+    }
+    
+    #signup-button {
+        margin-top: 4px;
+    }
+
+    .main-nav {
+        font-size: 75%;
+    }
+
+    .ion-navicon {
+        width: 50%;
+    }
+
+    .logo {
+        width: 50%;
+        height: auto;
+        margin-top: 20px;
+        margin-left: -20px;
+        margin-right: 0px;
+    }
+
+    .portrait h2 {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 20px
+    }
+
+    .portrait img {
+        width: 40%;
+        height: 40%;
+        margin-bottom: -50px;
+    }
+
+    .ribbon {
+        width: 60%;
+        margin-bottom: 10px;
+    }
+    
+    .description {
+        font-size: 110%;
+        line-height: 120%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .jumbotron-image-box-1 {
+       width: 40%;
+    }
+    
+    .jumbotron-image-box-2 {
+        top: 30%
+    }
+    
+    .welcome-box {
+        font-size: 78%;
+        left: 77%;
+    }
+    
+    .welcome-box h1 {
+        font-size: 200%;
+    }
+    
+    .welcome-box .btn-full {
+        font-size: 110%;
+    }
+}
+
+@media only screen and (max-height: 650px) {
+
+    #signup-button {
+        margin-top: 8px;
+    }
+    
+    .form-box {
+        top: 67%;
+        height: 45%;
+    }
+}
+
+@media only screen and (max-height: 510px) {
+    
+    .form-box {
+        top: 60%;
+        height: 60%;
+    }
+}
+
+@media only screen and (max-height: 460px) {
+    
+    .form-box {
+        top: 45%;
+        
+    }
+}
