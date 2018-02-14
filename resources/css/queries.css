@@ -101,7 +101,7 @@
     }
 
     .description {
-        font-size: 90%
+        font-size: 100%
     }
     
     .form-bg-2 {
@@ -151,11 +151,15 @@
     }
 
     .left-box .box-text {
-        font-size: 95%;
+        font-size: 120%;
     }
 
     .right-box .box-text {
-        font-size: 95%;
+        font-size: 130%;
+    }
+    
+    .ribbon {
+        margin-bottom: 20px;
     }
 
 }
@@ -204,11 +208,20 @@
 
     .left-box {
         height: auto;
-        padding-bottom: 30px;
+        padding-bottom: 35px;
     }
 
     .right-box {
         height: auto;
+        padding-bottom: 35px;
+    }
+    
+    .left-box .box-text {
+        font-size: 130%;
+    }
+
+    .right-box .box-text {
+        font-size: 130%;
     }
     
     .app-screen {
@@ -336,6 +349,16 @@
         /* margin: 1% 0 1% 1.6%;*/
         margin: 0 0 4% 0;
     }
+    
+    .sticky #the-team {
+        margin-left: 0px;
+    }
+    
+    .box p {
+        font-size: 120%;
+        line-height: 145%;
+        text-align: center;
+    }   
 
     /* Header */
     .welcome-box {
@@ -436,7 +459,7 @@
     .sticky .main-nav li:last-child {
         display: inline-block;
     }
-
+    
     .sticky .main-nav li a:hover,
     .sticky .main-nav li a:active {
         padding-bottom: 9px;
@@ -472,9 +495,9 @@
         width: 100%;
     }
     .section-features .icon-big {
-        font-size: 190%;
+        font-size: 270%;
         display: inline;
-        margin-left: 46%;
+        margin-left: 47%;
     }
 
     .section-features p {
@@ -503,7 +526,7 @@
         line-height: 23px;
     }
 
-    /* how it works */
+    /* beta testing */
     .app-screen {
         width: 40%;
     }
@@ -532,6 +555,17 @@
     .works-step:last-of-type {
         margin-bottom: 30px;
     }
+    
+    /* Meet the team */
+    .description {
+        font-size: 120%;
+        line-height: 130%;
+    }
+    
+    .ribbon {
+        margin-bottom: 5px;
+    }
+    
 
     .form-bg-2 {
         width: 100%;
@@ -661,7 +695,11 @@
     }
 
     .main-nav {
-        font-size: 75%;
+        font-size: 85%;
+    }
+    
+    .sticky .main-nav {
+        margin-left: 0;
     }
 
     .ion-navicon {
@@ -701,6 +739,11 @@
 }
 
 @media only screen and (max-width: 400px) {
+    
+    .sticky .main-nav {
+        margin-left: -50px;    
+    }
+    
 
     .jumbotron-image-box-1 {
        width: 40%;

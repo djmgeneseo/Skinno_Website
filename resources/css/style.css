@@ -131,8 +131,9 @@ h3 {
 }
 
 .box p {
-    font-size: 90%;
+    font-size: 95%;
     line-height: 145%;
+    text-align: center;
 }
 
 
@@ -422,6 +423,10 @@ header br {}
     display: none;
 }
 
+#the-team {
+    display: none;
+}
+
 /* Mobile navigation */
 
 .mobile-nav-icon {
@@ -497,6 +502,15 @@ header br {}
 
 .sticky .back-to-top {
     display: inline-block;
+}
+
+.sticky #the-team {
+    margin-left: -38px;
+    display: inline-block;
+}
+
+.sticky #meet-the-team {
+    display: none;
 }
 
 /*
@@ -580,39 +594,27 @@ header br {}
     z-index: 0;
 }
 
+.right-box .box-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 160%;
+    color: #6c6c6c;
+}
+
+.right-box h2:after {
+    margin-top: 15px;
+}
+
 .right-box .box-text {
     color: rgb(0, 0, 0);
     text-align: center;
     padding-left: 85px;
     padding-right: 55px;
-    padding-top: 35px;
     line-height: 1.5;
-    font-size: 130%;
+    font-size: 140%;
 }
 
-.right-box .box-title {
-    font-size: 160%;
-    margin-top: 20px;
-    margin-bottom: 25px;
-    color: rgb(109, 109, 109);
-    text-align: center;
-
-}
-
-.right-box h2:before {
-    display: block;
-    height: 2px;
-    background-color: #2bf2b3;
-    content: " ";
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.right-box h2:after {
-    display: none;
-}
 
 .mission-statement {
     color: white;
@@ -635,7 +637,7 @@ header br {}
 }
 
 .section-features h3 {
-    font-size: 91%;
+    font-size: 100%;
     text-align: center;
 }
 
@@ -731,6 +733,10 @@ header br {}
     height: 2100px;
     color: #fff;
 }
+
+.section-profiles h2 {
+        padding-top: 8px;
+    }
 
 .section-profiles .row {
     width: 28%;
