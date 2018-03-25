@@ -323,6 +323,10 @@ header br {}
     transform: translate(-50%, -50%);
 }
 
+.beta-button {
+    margin-right: 8px
+}
+
 .form-box {
     /* Won't use flow grid, b/c we want this text to be absolutely positioned */
     padding: 35px 35px 35px 35px;

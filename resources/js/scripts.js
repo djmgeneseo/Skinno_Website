@@ -34,6 +34,12 @@ $(document).ready(function () {
             scrollTop: $('.section-about-us').offset().top -76
         }, 1000)
     });
+    
+    $('.js--beta-button').click(function () {
+        $('html, body').animate({
+            scrollTop: $('.section-app').offset().top -76
+        }, 1000)
+    });
 
     /*------ Navigation Scroll ------*/
 
