@@ -1067,6 +1067,12 @@ footer {
 .social-icons li i:hover,
 .social-icons li i:active {
     color: #fff;
+    
+}
+
+.copyright {
+    margin-top: 10px;
+    text-align: center
 }
 
 /* ------------------------------------------- */
