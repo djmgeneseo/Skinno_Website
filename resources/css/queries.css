@@ -369,6 +369,7 @@
     .welcome-box h1 {
         font-size: 250%;
     }
+    
 
     .jumbotron-image-box-1 {
         width: 30%;
@@ -599,6 +600,10 @@
     .form-box {
         padding: 15px;
     }
+    
+    .welcome-box .btn .btn-full {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-height: 525px) {
@@ -666,6 +671,7 @@
     
     .welcome-box .btn-full {
         font-size: 110%;
+        width: 110%
     }
 
     .welcome-box h1 {
