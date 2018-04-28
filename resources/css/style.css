@@ -734,7 +734,7 @@ header br {}
     /* image stays in same place */
     background-attachment: fixed;
     position: relative;
-    height: 2100px;
+    height: 1600px;
     color: #fff;
 }
 
@@ -752,7 +752,7 @@ header br {}
     padding: 20px 20px;
     border: 1px solid #fff;
     position: absolute;
-    top: 10.5%;
+    top: 11.5%;
     left: 20.5%;
     -webkit-box-shadow: 7px 7px 5px rgba(160, 160, 160, 0.27);
     box-shadow: 7px 7px 5px rgba(160, 160, 160, 0.27);
@@ -764,7 +764,7 @@ header br {}
     padding: 20px 20px;
     border: 1px solid #fff;
     position: absolute;
-    top: 39.3%;
+    top: 49.5%;
     left: 20.5%;
     -webkit-box-shadow: 7px 7px 5px rgba(160, 160, 160, 0.27);
     box-shadow: 7px 7px 5px rgba(160, 160, 160, 0.27);
@@ -790,7 +790,7 @@ header br {}
     padding: 20px 20px;
     border: 1px solid #fff;
     position: absolute;
-    top: 19%;
+    top: 20%;
     left: 51%;
     -webkit-box-shadow: 7px 7px 5px rgba(160, 160, 160, 0.27);
     box-shadow: 7px 7px 5px rgba(160, 160, 160, 0.27);
@@ -802,7 +802,7 @@ header br {}
     padding: 20px 20px;
     border: 1px solid #fff;
     position: absolute;
-    top: 47.8%;
+    top: 58%;
     left: 51%;
     -webkit-box-shadow: 7px 7px 5px rgba(160, 160, 160, 0.27);
     box-shadow: 7px 7px 5px rgba(160, 160, 160, 0.27);

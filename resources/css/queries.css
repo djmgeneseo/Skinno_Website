@@ -756,6 +756,7 @@
     .welcome-box {
         font-size: 78%;
         left: 77%;
+        
     }
     
     .welcome-box h1 {
@@ -763,8 +764,12 @@
     }
     
     .welcome-box .btn-full {
-        font-size: 110%;
+        
+        font-size: 100%;
+        margin-left: -20px;
+        
     }
+    
 }
 
 @media only screen and (max-height: 650px) {
