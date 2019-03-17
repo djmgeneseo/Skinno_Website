@@ -1,7 +1,7 @@
 # Version 1 of the landing page for Skinno, an iOS mobile application in Beta phase between February '18 - June '18. 
 
 Skinno is an iOS mobile application that uses your phone's back-facing camera and OCR to scan and describe the ingredients of skincare products in easy-to-understand language.
-Skinno Inc. won both the Nestlé SHIELD Hackathon and the Technology grand prize at the ZAHN Innovation Center.
+Skinno Inc. won both the Nestlé SHIELD Hackathon and the Technology grand prize at the ZAHN Innovation Center: https://www.zahncenternyc.com/portfolio/skinno/
 
 # This website was made with:
   ## CSS
